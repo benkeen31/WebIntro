@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- 
+Index page for Introduction to the Web assignment 2
+Author: Ben Keen
+Date: 2024-03-28
+-->
+	<link rel="stylesheet" media="screen" href="css/portfolio.css">
+	<link rel="stylesheet" media="print" href="css/print.css">
+	<title style="color: blue; font-size: 48px">
+		Index
+	</title>
+</head>
+
+<body>
+
+<script>
+    $( function () {
+        alert("Welcome to Fictitious Flights Ltd. Newsletter Signup");
+    }); 
+	
+	function validateForm() {
+	  let z = true;
+	  let x = document.forms["newsForm"]["fname"].value;
+	  if (x == "") {
+		alert("First name must be filled out");
+		z = false;
+	  let y = document.forms["newsForm"]["lname"].value;
+	  if (y == "") {
+		alert("Last name must be filled out");
+		z = false;
+	  return z;
+	  }
+	} 
+</script>
+
+<h1 style="font-size:40px;">Index</h1>
+<img src="Images/Logo.png" alt="Logo" style="width:150px;height:150px;">
+	  <div class="topnav">
+		  <a class="active" href="index.html">Index</a>
+		  <a href="bk_A1_about.html">About</a>
+		  <a href="bk_A1_resume.html">Resume</a>
+		  <a href="bk_A1_web_skills.html">Web Skills</a>
+		</div> 
+		
+	<img src="Images/Car_Ad_4.png" alt="Car Ad 4" style="width:500px;height:500px;">
+	
+	<h2>Sign up for our newsletter!</h2>
+	
+		<form name="newsForm" action="http://csusap.csu.edu.au/cgi-bin/echo_form" onsubmit="return validateForm()" method="post">
+		  <label for="fname">First Name:</label><br>
+		  <input type="text" id="fname" name="fname"><br>
+		  
+		  <label for="lname">Last Name:</label><br>
+		  <input type="text" id="fname" name="lname"><br>
+		  
+		  <label for="email">Email Address:</label><br>
+		  <input type="text" id="email" name="email"><br>
+		  
+		  <input type="radio" id="1" name="age1" value="15-25">
+			<label for="html">15-25</label><br>
+		  <input type="radio" id="2" name="age2" value="26-35">
+			<label for="css">26-35</label><br>
+		  <input type="radio" id="3" name="age3" value="36-45">
+			<label for="javascript">36-45</label><br>
+		  <input type="radio" id="4" name="age4" value="46-55">
+			<label for="css">46-55</label><br>
+		  <input type="radio" id="5" name="age5" value="55+">
+			<label for="javascript">55+</label><br>
+		  
+		  <input type="checkbox" id="topic1" name="topic1" value="Purchase">
+		  <label for="vehicle1">Vehicle Purchase</label><br>
+		  <input type="checkbox" id="topic2" name="topic2" value="Hire">
+		  <label for="vehicle2">Vehicle Hire</label><br>
+		  <input type="checkbox" id="topic3" name="topic3" value="Trade">
+		  <label for="vehicle3">Vehicle Trade-Ins</label><br>
+		  <input type="checkbox" id="topic4" name="topic4" value="Maint">
+		  <label for="vehicle3">Vehicle Maintenance</label><br>
+		  <input type="checkbox" id="topic3" name="topic5" value="Repair">
+		  <label for="vehicle3">Vehicle Repair</label><br>
+		  
+		  <label for="notes">Anything else you'd like to tell us:</label><br>
+		  <textarea id="notes" name="notes" rows="3" cols="60">
+			Type here...
+			</textarea><br>
+		  
+		   <input type="submit" value="Submit">
+		   <input type="reset" value="Reset">
+		</form> 
+	
+	<div class="footer">
+		<p id="four">Phone: 0478 963 215</p>
+		<p id="four">Email: ben@keen.com</p>
+		<p id="four">All content on this site is &copy me or AI generated</p>
+	</div>
+</body>
+
